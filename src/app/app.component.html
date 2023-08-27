@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav?.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  RxJS Lesson
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [(opened)]="opened">
+    <app-router-list></app-router-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="m-16">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

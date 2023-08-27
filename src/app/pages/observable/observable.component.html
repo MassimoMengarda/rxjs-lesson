@@ -1,0 +1,47 @@
+<ng-container *ngIf="interval$ | async"></ng-container>
+
+<h2>Observable</h2>
+<a href="https://rxjs.dev/api/index/class/Observable" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Unità fondamentale di RxJS che rappresenta un insieme di valori nel tempo</li>
+    <li>Praticamente qualsiasi dato può essere un Observable</li>
+    <li>Per essere usati devo essere sottoscritti (<code>subscribe</code> oppure <code>| async</code>)</li>
+    <li>Possono essere creati in diversi modi (<code>Subject</code> e derivati oppure <code>of</code>)</li>
+    <li>Da usare il più possibile perché permettono di reagire correttamente a tutti gli eventi</li>
+    <li>Mettono a disposizione moltissime operazioni diverse (<code>pipe</code>) e quindi sono difficili da gestire</li>
+</ul>
+
+<hr>
+
+<h3>Subscribe</h3>
+
+<ul class="spaced">
+    <li>Quando un observable viene creato ma non viene chiamata la funzione <code>subscribe</code>, questo non emette
+    </li>
+    <li>Nell'esempio l'observable creato con <code>of</code> emette solo alla chiamata subscribe</li>
+</ul>
+
+<img src="assets/observable/create_of.png">
+
+<ul class="spaced">
+    <li>È importante disiscriversi da ogni observable non più utilizzato!</li>
+    <li>Vari modi (<code>unsubscribe</code>, <code>takeUntil</code>, <code>| async</code>)</li>
+</ul>
+
+<img src="assets/observable/unsubscribe.png">
+
+<ul class="spaced">
+    <li>Anche per gli observable di <code>httpClient</code>?</li>
+    <li>Cosa succede se la chiamata fallisce?</li>
+</ul>
+
+<img src="assets/observable/create_http.png">
+
+<hr>
+
+<p><a href="https://rxjs.dev/guide/observable" target="_blank">Qui</a> si trovano moltissime informazioni utili sul
+    funzionamento degli observable, lettura caldamente consigliata</p>
+<p><a href="https://rxjs.dev/guide/observable" target="_blank">https://rxjs.dev/guide/observable</a></p>

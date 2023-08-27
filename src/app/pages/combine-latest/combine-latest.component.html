@@ -1,0 +1,32 @@
+<h2>CombineLatest</h2>
+<a href="https://rxjs.dev/api/index/function/combineLatest" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Ritorna un nuovo observable i cui valori sono la combinazione degli ultimi valori emessi dalle sorgenti</li>
+    <li>Emette ogni volta che una delle sorgenti emette un nuovo valore</li>
+    <li>Viene completato quando tutte le sorgenti chiamano la funzione <code>complete</code></li>
+    <li>Attenzione: <code>combineLatest</code> aspetta che ogni sorgente abbia emesso almeno un valore, non emette
+        altrimenti</li>
+    <li>Attenzione: se una sorgente dà errore, viene chiamta <code>unsubscribe</code> su tutte le altre sorgenti</li>
+</ul>
+
+<hr>
+
+<h3>Marble diagram</h3>
+
+<img src="https://rxjs.dev/assets/images/marble-diagrams/combineLatest.png">
+
+<hr>
+
+<h3>Esempio di utilizzo</h3>
+
+<img src="/assets/combine-latest/example.png">
+
+<hr>
+
+<div class="row gap-16">
+    <button mat-raised-button color="primary" (click)="subject1.next(1)">Click 1</button>
+    <button mat-raised-button color="primary" (click)="subject2.next(2)">Click 2</button>
+</div>

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.m-16 {
+    margin: 16px;
+}
+
+ul.spaced li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+}

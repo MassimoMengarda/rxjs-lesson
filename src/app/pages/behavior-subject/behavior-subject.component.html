@@ -1,0 +1,27 @@
+<h2>Behavior Subject</h2>
+<a href="https://rxjs.dev/api/index/class/BehaviorSubject" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Tipo speciale di subject che mantiene traccia dell'ultimo valore emesso</li>
+    <li>Emette appena un ascoltatore si iscrive</li>
+    <li>È utile per rappresentare un valore nel tempo</li>
+    <li>Mette a disposizione un metodo <code>getValue</code>, ma non va abusato!</li>
+</ul>
+
+<img src="assets/behavior-subject/multiple-observers.png">
+
+<hr>
+
+<ul class="spaced">
+    <li>Possono essere utilizzati per costruire form complessi che cambiano al cambiare dell'input dell'utente</li>
+    <li>Il codice può diventare complesso da gestire molto velocemente se non usati correttamente</li>
+    <li>Attenzione a costruire observer robusti!</li>
+</ul>
+
+<div class="row">
+    <button mat-raised-button color="primary" (click)="startInterval()">Start interval</button>
+</div>
+
+<img src="assets/behavior-subject/start-interval.png">

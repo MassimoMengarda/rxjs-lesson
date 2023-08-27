@@ -1,0 +1,39 @@
+<h2>Subject</h2>
+<a href="https://rxjs.dev/api/index/class/Subject" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Tipo speciale di observable che permette di creare propagare valore a più ascoltatori</li>
+    <li>Possono essere visti come EventEmitter di angular</li>
+    <li>È buona prassi non dare accesso diretto alla sorgente, ma utilizzare il metodo <code>asObservable</code></li>
+</ul>
+
+<img src="assets/subject/as-observable.png">
+
+<hr>
+
+<ul class="spaced">
+    <li>Cosa succede alla chiamata <code>subscribe</code>?</li>
+    <li>Ricordarsi di disiscriversi da ogni observable!</li>
+</ul>
+
+<div class="row gap-16">
+    <button mat-raised-button color="primary" (click)="onClick(click)">Click</button>
+    <button mat-raised-button color="primary" (click)="subscribe()">Subscribe</button>
+    <p>{{ click }} Click</p>
+</div>
+
+<hr>
+
+<ul class="spaced">
+    <li>Ogni evento dovrebbe essere gestito tramite <code>subject</code> per poter <b>reagire</b> correttamente</li>
+    <li>Non tutto deve essere subject o observable, da valutare ogni situazione</li>
+    <li>Attenzione al lifetime dei costrutti di Angular (componente vs modulo)</li>
+</ul>
+
+<hr>
+
+<p><a href="https://rxjs.dev/guide/subject" target="_blank">Qui</a> si trovano moltissime informazioni utili sul
+    funzionamento degli subject, lettura caldamente consigliata</p>
+<p><a href="https://rxjs.dev/guide/subject" target="_blank">https://rxjs.dev/guide/subject</a></p>

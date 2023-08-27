@@ -1,0 +1,28 @@
+<h2>Merge</h2>
+<a href="https://rxjs.dev/api/index/function/merge" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Ritorna un nuovo observable che emette concorrentemente i valori delle sorgenti</li>
+    <li>Il risultato sono tutti i valori emessi da ognuna delle sorgenti</li>
+</ul>
+
+<hr>
+
+<h3>Marble diagram</h3>
+
+<img src="https://rxjs.dev/assets/images/marble-diagrams/merge.png">
+
+<hr>
+
+<h3>Esempio di utilizzo</h3>
+
+<img src="/assets/merge/example.png">
+
+<hr>
+
+<div class="row gap-16">
+    <button mat-raised-button color="primary" (click)="subject1.next(1)">Pulsante componente 1</button>
+    <button mat-raised-button color="primary" (click)="subject2.next(2)">Pulsante componente 2</button>
+</div>

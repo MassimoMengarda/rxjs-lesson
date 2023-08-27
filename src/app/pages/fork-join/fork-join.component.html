@@ -1,0 +1,25 @@
+<h2>ForkJoin</h2>
+<a href="https://rxjs.dev/api/index/function/forkJoin" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Accetta un array di observable e restituisce un array di valori emessi (nello stesso ordine)</li>
+    <li>Lo stesso può essere fatto tramite oggetto</li>
+    <li>Aspetta la <code>complete</code> di ogni sorgente ed emette i risultati combinati</li>
+    <li>Emette una e una sola volta (oppure mai se le sorgenti non chiamano la <code>complete</code>)</li>
+    <li>Attenzione: se una delle sorgenti dà errore, tutte le sorgenti chiamano <code>unsubscribe</code></li>
+    <li>Attenzione: se una delle sorgenti completa senza emettere valori, nessun valore verrà emesso</li>
+</ul>
+
+<hr>
+
+<h3>Marble diagram</h3>
+
+<img src="https://rxjs.dev/assets/images/marble-diagrams/forkJoin.png">
+
+<hr>
+
+<h3>Esempio di utilizzo</h3>
+
+<img src="/assets/fork-join/example.png">

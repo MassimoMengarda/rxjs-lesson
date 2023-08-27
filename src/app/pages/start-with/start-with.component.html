@@ -1,0 +1,29 @@
+<h2>StartWith</h2>
+<a href="https://rxjs.dev/api/index/function/startWith" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Dà un valore iniziale ad un observable</li>
+    <li>Emette in modo sincrono alla chiamata <code>subscribe</code></li>
+    <li>Può essere utilizzato per evitare i classici problemi di <code>combineLatest</code> e <code>withLatestFrom</code></li>
+</ul>
+
+<hr>
+
+<h3>Marble diagram</h3>
+
+<img src="https://rxjs.dev/assets/images/marble-diagrams/startWith.png">
+
+<hr>
+
+<h3>Esempio di utilizzo</h3>
+
+<img src="/assets/start-with/example.png">
+
+<hr>
+
+<div class="row gap-16"> 
+    <button mat-raised-button color="primary" (click)="subscribe()">Subscribe</button>
+    <button mat-raised-button color="primary" (click)="onClick($event)">Click</button>
+</div>

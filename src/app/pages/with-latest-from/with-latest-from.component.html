@@ -1,0 +1,34 @@
+<h2>WithLatestFrom</h2>
+<a href="https://rxjs.dev/api/index/function/withLatestFrom" target="_blank">Documentazione</a>
+
+<hr>
+
+<ul class="spaced">
+    <li>Combina un observable sorgente con altri, emettendo gli ultimi valore emessi da tutti gli observable ma solo
+        quando la sorgente emette</li>
+    <li>Come <code>combineLatest</code>, ma emette solo quando la sorgente emette</li>
+    <li>Attenzione: non emette se tutti gli observable non hanno emesso almeno un valore</li>
+    <li>Attenzione: facile perdere valori della sorgente se non configurato correttamente</li>
+</ul>
+
+<hr>
+
+<h3>Marble diagram</h3>
+
+<img src="https://rxjs.dev/assets/images/marble-diagrams/withLatestFrom.png">
+
+<hr>
+
+<h3>Esempio di utilizzo</h3>
+
+<img src="/assets/with-latest-from/example.png">
+
+<hr>
+
+<div class="row gap-16" *ngIf="{ source: source$ | async, other: other$ | async } as data">
+    <button mat-raised-button color="primary" (click)="emitSource(data.source! + 1)">Sorgente</button>
+    <button mat-raised-button color="primary" (click)="emitOther(data.other! + 1)">Altro observable</button>
+
+    <p>Sorgente: {{ data.source }}</p>
+    <p>Altro: {{ data.other }}</p>
+</div>
