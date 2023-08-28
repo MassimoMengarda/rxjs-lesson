@@ -22,6 +22,7 @@ import { IntervalComponent } from './pages/interval/interval.component';
 import { StartWithComponent } from './pages/start-with/start-with.component';
 import { DebounceTimeComponent } from './pages/debounce-time/debounce-time.component';
 import { TakeUntilComponent } from './pages/take-until/take-until.component';
+import { SwitchMapComponent } from './pages/switch-map/switch-map.component';
 import { CombineLatestComponent } from './pages/combine-latest/combine-latest.component';
 import { MergeComponent } from './pages/merge/merge.component';
 import { PairwiseComponent } from './pages/pairwise/pairwise.component';
@@ -45,6 +46,7 @@ import { RouterListComponent } from './components/router-list/router-list.compon
     StartWithComponent,
     DebounceTimeComponent,
     TakeUntilComponent,
+    SwitchMapComponent,
     CombineLatestComponent,
     MergeComponent,
     PairwiseComponent,

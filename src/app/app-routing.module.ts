@@ -18,6 +18,7 @@ import { TakeUntilComponent } from './pages/take-until/take-until.component';
 import { TakeComponent } from './pages/take/take.component';
 import { TapComponent } from './pages/tap/tap.component';
 import { WithLatestFromComponent } from './pages/with-latest-from/with-latest-from.component';
+import { SwitchMapComponent } from './pages/switch-map/switch-map.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'debounce-time', component: DebounceTimeComponent }, // https://rxjs.dev/api/index/function/debounceTime
   { path: 'take-until', component: TakeUntilComponent }, // https://rxjs.dev/api/index/function/takeUntil
   
+  { path: 'switch-map', component: SwitchMapComponent }, // https://rxjs.dev/api/index/function/combineLatest
   { path: 'fork-join', component: ForkJoinComponent }, // https://rxjs.dev/api/index/function/forkJoin
   { path: 'combine-latest', component: CombineLatestComponent }, // https://rxjs.dev/api/index/function/combineLatest
   { path: 'merge', component: MergeComponent }, // https://rxjs.dev/api/index/function/merge
