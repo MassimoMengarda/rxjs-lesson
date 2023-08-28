@@ -1,0 +1,22 @@
+<h3>Esercizio 1</h3>
+
+<p>Mostra il nome di tutti gli utenti (componente <code>app-exercise1</code>)</p>
+<p>Usa la funzione <code>map</code></p>
+
+<div class="row">
+  <div class="flex">
+    <p>Risultato previsto:</p>
+    <ul class="spaced">
+      <li>John</li>
+      <li>Jane</li>
+      <li>Jack</li>
+    </ul>
+  </div>
+
+  <div class="flex">
+    <p>Il tuo risultato:</p>
+    <ul class="spaced">
+      <li *ngFor="let name of names$ | async">{{ name }}</li>
+    </ul>
+  </div>
+</div>

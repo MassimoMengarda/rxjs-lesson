@@ -1,0 +1,21 @@
+<h3>Esercizio 3</h3>
+
+<p>Mostra il nome degli utenti con ruolo <code>admin</code> (componente <code>app-exercise3</code>)</p>
+<p>Usa la funzione <code>forkJoin</code></p>
+
+<div class="row">
+  <div class="flex">
+    <p>Risultato previsto:</p>
+    <ul>
+      <li>John</li>
+      <li>Jane</li>
+    </ul>
+  </div>
+
+  <div class="flex">
+    <p>Il tuo risultato:</p>
+    <ul>
+      <li *ngFor="let admin of admin$ | async">{{ admin }}</li>
+    </ul>
+  </div>
+</div>

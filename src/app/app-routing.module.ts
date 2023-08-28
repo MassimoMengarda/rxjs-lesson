@@ -19,13 +19,15 @@ import { TakeComponent } from './pages/take/take.component';
 import { TapComponent } from './pages/tap/tap.component';
 import { WithLatestFromComponent } from './pages/with-latest-from/with-latest-from.component';
 import { SwitchMapComponent } from './pages/switch-map/switch-map.component';
+import { ExercisesComponent } from './pages/exercises/exercises.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+
   { path: 'observable', component: ObservableComponent }, // https://rxjs.dev/api/index/class/Observable
   { path: 'subject', component: SubjectComponent }, // https://rxjs.dev/api/index/class/Subject
   { path: 'behavior-subject', component: BehaviorSubjectComponent }, // https://rxjs.dev/api/index/class/BehaviorSubject
-  
+
   { path: 'map', component: MapComponent }, // https://rxjs.dev/api/index/function/map
   { path: 'tap', component: TapComponent }, // https://rxjs.dev/api/index/function/tap
   { path: 'filter', component: FilterComponent }, // https://rxjs.dev/api/index/function/filter
@@ -35,13 +37,15 @@ const routes: Routes = [
   { path: 'swart-with', component: StartWithComponent }, // https://rxjs.dev/api/index/function/startWith
   { path: 'debounce-time', component: DebounceTimeComponent }, // https://rxjs.dev/api/index/function/debounceTime
   { path: 'take-until', component: TakeUntilComponent }, // https://rxjs.dev/api/index/function/takeUntil
-  
+
   { path: 'switch-map', component: SwitchMapComponent }, // https://rxjs.dev/api/index/function/combineLatest
   { path: 'fork-join', component: ForkJoinComponent }, // https://rxjs.dev/api/index/function/forkJoin
   { path: 'combine-latest', component: CombineLatestComponent }, // https://rxjs.dev/api/index/function/combineLatest
   { path: 'merge', component: MergeComponent }, // https://rxjs.dev/api/index/function/merge
   { path: 'with-latest-from', component: WithLatestFromComponent }, // https://rxjs.dev/api/index/function/withLatestFrom
   { path: 'pairwise', component: PairwiseComponent }, // https://rxjs.dev/api/index/function/pairwise
+
+  { path: 'exercises', component: ExercisesComponent },
 
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];

@@ -1,0 +1,19 @@
+<h3>Esercizio 4</h3>
+
+<p>Mostra il nome degli utenti con ruolo <code>admin</code> (componente <code>app-exercise4</code>)</p>
+<p>Usa la funzione <code>withLatestFrom</code></p>
+
+<div class="row">
+  <div class="flex">
+    <mat-form-field>
+      <mat-label>Nome utente</mat-label>
+      <input matInput (input)="onInput($event)">
+    </mat-form-field>
+
+    <p>Il tuo risultato:</p>
+
+    <ul>
+      <li *ngFor="let user of users$ | async">{{ user.name }}</li>
+    </ul>
+  </div>
+</div>

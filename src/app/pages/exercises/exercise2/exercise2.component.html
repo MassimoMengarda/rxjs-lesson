@@ -1,0 +1,20 @@
+<h3>Esercizio 2</h3>
+
+<p>Mostra il numero di ruoli dell'utente {{ name }} (componente <code>app-exercise2</code>)</p>
+<p>Usa la funzione <code>switchMap</code></p>
+
+<div class="row">
+  <div class="flex">
+    <p>Risultato previsto:</p>
+    <ul>
+      <li>L'utente {{ name }} ha 2 ruoli</li>
+    </ul>
+  </div>
+
+  <div class="flex">
+    <p>Il tuo risultato:</p>
+    <ul>
+      <li *ngIf="roleCount$ | async as roleCount">L'utente {{ name }} ha {{ roleCount }} ruoli</li>
+    </ul>
+  </div>
+</div>
