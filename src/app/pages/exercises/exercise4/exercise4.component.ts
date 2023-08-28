@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { User, UserClient } from '../exercises.service';
-import { Observable, Subject, map, startWith, withLatestFrom } from 'rxjs';
+import { Subject, map, startWith, withLatestFrom } from 'rxjs';
 
 @Component({
   selector: 'app-exercise4',
@@ -12,7 +12,12 @@ export class Exercise4Component {
 
   nameSubject = new Subject<string>();
 
-  users$?: Observable<User[]>;
+  users$ = this.nameSubject.asObservable()
+    .pipe(
+      startWith(''),
+      withLatestFrom(this.allUsers$),
+      map(([name, users]) => this.filterUsers(users, name))
+    );
 
   constructor(private userClient: UserClient) { }
 

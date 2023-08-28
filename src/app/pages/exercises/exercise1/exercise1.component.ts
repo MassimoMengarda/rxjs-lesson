@@ -8,7 +8,8 @@ import { Observable, map } from 'rxjs';
   styleUrls: ['./exercise1.component.scss']
 })
 export class Exercise1Component {
-  names$?: Observable<string[]>;
+  names$?: Observable<string[]> = this.userClient.getUsers()
+    .pipe(map(users => users.map(user => user.name)));
 
   constructor(private userClient: UserClient) { }
 }

@@ -10,7 +10,11 @@ import { Observable, map, switchMap } from 'rxjs';
 export class Exercise2Component {
   name = 'John';
 
-  roleCount$?: Observable<number>;
+  roleCount$?: Observable<number> = this.userClient.getUserByName(this.name)
+    .pipe(
+      switchMap(user => this.userRoleClient.getUserRolesByUserId(user!.id)),
+      map(userRoles => userRoles.length)
+    );
 
   constructor(
     private userClient: UserClient,
