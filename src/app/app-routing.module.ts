@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'take', component: TakeComponent }, // https://rxjs.dev/api/index/function/take
   { path: 'of', component: OfComponent }, // https://rxjs.dev/api/index/function/of
   { path: 'interval', component: IntervalComponent }, // https://rxjs.dev/api/index/function/interval
-  { path: 'swart-with', component: StartWithComponent }, // https://rxjs.dev/api/index/function/startWith
+  { path: 'start-with', component: StartWithComponent }, // https://rxjs.dev/api/index/function/startWith
   { path: 'debounce-time', component: DebounceTimeComponent }, // https://rxjs.dev/api/index/function/debounceTime
   { path: 'take-until', component: TakeUntilComponent }, // https://rxjs.dev/api/index/function/takeUntil
 
