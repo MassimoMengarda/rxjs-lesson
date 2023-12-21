@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "rxjs-lesson:build:production"
+              "buildTarget": "rxjs-lesson:build:production"
             },
             "development": {
-              "browserTarget": "rxjs-lesson:build:development"
+              "buildTarget": "rxjs-lesson:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rxjs-lesson:build"
+            "buildTarget": "rxjs-lesson:build"
           }
         },
         "test": {
